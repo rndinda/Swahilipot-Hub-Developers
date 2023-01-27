@@ -1,0 +1,1 @@
+This repository  contains projects and activites at Swahilipot Hub
