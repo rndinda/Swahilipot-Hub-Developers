@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
     <style>
         section {
             padding: 60px 0;
@@ -23,6 +25,7 @@
         <div class="container-xxl">
             <a href="#intro" class="navbar-brand">
                 <span class="fw-bold text-info">
+                    <i class="bi bi-book"></i>
                     Net-Ninja Pro Book
                 </span>
             </a>
@@ -216,13 +219,21 @@
     <section class="reviews bg-info">
         <div class="container-lg">
             <div class="text-center">
-                <h2>Book Reviews</h2>
+                <h2><i class="bi bi-stars"></i>Book Reviews</h2>
                 <p class="lead">People's opinion on the book</p>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="list-group">
                         <div class="list-group-item list-group-item-primary py-3">
+                            <!-- icons -->
+                            <div class="pb-5">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
                             <h5 class="mb-1">Reccomend for web-developer</h5>
                             <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, vero vitae
                                 perspiciatis aperiam alias sapiente voluptate quibusdam architecto repellendus
@@ -258,6 +269,67 @@
     </section>
 
 
+    <!-- the contact form -->
+
+    <section id="contact">
+        <div class="container-lg">
+            <div class="text-center">
+                <h3>Reach me </h3>
+                <p class="lead">Fill in the form to contact me </p>
+            </div>
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-6">
+                    <form>
+                        <label for="name" class="form-label">Name</label>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-person"></i>
+                            </span>
+                            <input type="text" class="form-control" id="name" placeholder="Ndinda">
+                        </div>
+
+
+                        <label for="email" class="form-label">Email address</label>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope-fill"></i>
+                            </span>
+                            <input type="text" class="form-control" id="email" placeholder="eg: rndinda@gmail.com">
+                        </div>
+
+
+
+                        <label for="subject" class="form-label">What is your question</label>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-left-dots-fill"></i>
+                            </span>
+                            <select id="subject" class="form-select">
+                                <option value="pricing">Price question</option>
+                                <option value="content" selected>About the content</option>
+                                <option value="others">Other questions</option>
+                            </select>
+                        </div>
+
+
+
+                        <div class="form-floating mb-4 mt-5">
+
+                            <textarea id="query" style="height:140px" class="form-control"></textarea>
+                            <label for="query" class="form-label">Your question</label>
+                        </div>
+
+                        <div class="mb-4 text-center">
+                            <button type="submit" class="btn btn-secondary">Submit</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
