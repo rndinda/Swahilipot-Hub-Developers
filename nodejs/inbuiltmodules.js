@@ -31,13 +31,38 @@
 //console.log(him)
 
 
+
 // PATH MODULE
 
 const path = require('path')
 
 //console.log(path.sep)
+// const filePath = path.join('./Folder','subfolder','file.txt')
+// console.log(filePath)
 
+//base of a file path
+// const base = path.basename(filePath)
+// console.log(base)
 
-// path.join()
-// path.basement()
 //path.resolve()- for absolute path
+
+// const abs = path.resolve(__dirname, 'Folder','subfolder','file.txt' )
+// console.log(abs)
+
+
+
+
+// The FILE SYSTEM
+ 
+const {readFileSync, writeFileSync} = require('fs')
+
+const first = readFileSync("./Folder/first.txt", 'utf8')
+const second = readFileSync('./Folder/subfolder/file.txt','utf-8')
+
+console.log(first)
+console.log(second)
+
+// writeFileSync(file, data[, options])
+
+const third = writeFileSync('./Folder/new.txt', 'Hello Mister')
+console.log(third)
