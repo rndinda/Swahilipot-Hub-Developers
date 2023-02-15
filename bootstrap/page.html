@@ -74,7 +74,10 @@
                     </a>
                 </div>
                 <div class="col-md-5 text-center d-md-block d-none">
+                    <!-- a tooltip -->
+                    <span class="hey" data-bs-placement="bottom" title="The Book">
                     <img src="img/ebook-cover.png" alt="cover of an ebook" class="img-fliud">
+                </span>
                 </div>
             </div>
         </div>
@@ -285,7 +288,17 @@
                             <span class="input-group-text">
                                 <i class="bi bi-person"></i>
                             </span>
+
                             <input type="text" class="form-control" id="name" placeholder="Ndinda">
+                            
+                                <!-- tooltip -->
+                                <span class="input-group-text">
+                                <span class="hey" data-bs-placement="top" title="Whats your name buddy">
+                                    <i class="bi bi-question-circle text-muted"></i>
+                                
+                                </span>
+                            </span>
+                           
                         </div>
 
 
@@ -295,6 +308,14 @@
                                 <i class="bi bi-envelope-fill"></i>
                             </span>
                             <input type="text" class="form-control" id="email" placeholder="eg: rndinda@gmail.com">
+
+                            
+                            <span class="input-group-text">
+                                <!-- tooltip -->
+                                <span class="hey" data-bs-placement="top" title="enter email">
+                                <i class="bi bi-question-circle text-muted"></i>
+                            </span>
+                            </span>
                         </div>
 
 
@@ -334,6 +355,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+        <!-- tooltip  -->
+        <script>
+            const tooltips = document.querySelectorAll(".hey")
+            tooltips.forEach(tp =>{
+                new bootstrap.Tooltip(tp)
+            })
+        </script>
 </body>
 
 </html>
