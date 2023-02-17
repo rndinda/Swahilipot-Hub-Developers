@@ -45,7 +45,7 @@
 
 
 //for file 3-grenade
-
+//  -this is how you invoke the already called function
  require('./3-grenade')
 
 

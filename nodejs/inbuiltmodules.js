@@ -1,6 +1,6 @@
 // OPERATING SYSTEM MODULE
 
-//const os = require('os')
+const os = require('os')
 
 //const user = os.userInfo()
 // console.log(user)
@@ -54,15 +54,24 @@ const path = require('path')
 
 // The FILE SYSTEM
  
-const {readFileSync, writeFileSync} = require('fs')
+// Synchronous approach
 
-const first = readFileSync("./Folder/first.txt", 'utf8')
-const second = readFileSync('./Folder/subfolder/file.txt','utf-8')
+// const {readFileSync, writeFileSync} = require('fs')
 
-console.log(first)
-console.log(second)
+// const first = readFileSync("./Folder/first.txt", 'utf8')
+// const second = readFileSync('./Folder/subfolder/file.txt','utf-8')
 
-// writeFileSync(file, data[, options])
+// console.log(first)
+// console.log(second)
 
-const third = writeFileSync('./Folder/new.txt', 'Hello Mister')
-console.log(third)
+
+// writeFileSync('./Folder/subfolder/new.txt', 'Hey Mister')
+
+// writeFileSync('./Folder/subfolder/two.txt', `${first},${second}`)
+// writeFileSync('./Folder/subfolder/third.txt', `${first},${second}`, {flag:'a'})
+// console.log(third)
+
+
+// Asynchronous approach
+
+// const {readFile,writeFile}
