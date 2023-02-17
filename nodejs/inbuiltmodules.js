@@ -74,4 +74,30 @@ const path = require('path')
 
 // Asynchronous approach
 
-// const {readFile,writeFile}
+ const {readFile,writeFile} = require('fs')
+
+ readFile('./Folder/subfolder/file.txt', 'utf8', (err, result)=>{
+
+ if (err){
+    console.log(err)
+    return
+ }
+ console.log(result)  //for file.txt
+ readFile('./Folder/subfolder/new.txt', 'utf8', (err, result) => {
+    if(err){
+        console.log(err)
+        return
+    }
+    console.log(result) //for new.txt
+ })
+
+ // writefile
+ writeFile('./Folder/subfolder/forth.txt', 'Conistency baby', (err, result) =>{
+   if(err){
+      console.log(err)
+      return
+   }
+   console.log(result)
+ })
+})
+ 
