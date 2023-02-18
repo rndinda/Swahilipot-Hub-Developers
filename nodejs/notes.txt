@@ -1,0 +1,7 @@
+HYPERTEXT TRANSFER PROTOCOL.
+
+ Set of rules and standards that define how web browsers and web servers communicate with each other. The protocol defines how data is exchanged between client devices (such as web browsers) and server machines over the internet.
+
+HTTP is a stateless protocol, each request/response cycle between a client and server is independent of any previous or subsequent cycles. When a client sends a request to a server using HTTP, the server responds with a message that includes a status code, headers, and a body. The status code indicates whether the request was successful or not, the headers contain additional information about the response, and the body contains the requested data (such as an HTML page, an image, or a JSON object).
+
+The current version of HTTP is HTTP/2, which is an improvement over its predecessor, HTTP/1.1. HTTP/2 includes features such as multiplexing, header compression, and server push, which make web browsing faster and more efficient.

@@ -56,7 +56,7 @@ const path = require('path')
  
 // Synchronous approach
 
-// const {readFileSync, writeFileSync} = require('fs')
+const {readFileSync, writeFileSync} = require('fs')
 
 // const first = readFileSync("./Folder/first.txt", 'utf8')
 // const second = readFileSync('./Folder/subfolder/file.txt','utf-8')
@@ -76,28 +76,49 @@ const path = require('path')
 
  const {readFile,writeFile} = require('fs')
 
- readFile('./Folder/subfolder/file.txt', 'utf8', (err, result)=>{
+//  readFile('./Folder/subfolder/file.txt', 'utf8', (err, result)=>{
 
- if (err){
-    console.log(err)
-    return
- }
- console.log(result)  //for file.txt
- readFile('./Folder/subfolder/new.txt', 'utf8', (err, result) => {
-    if(err){
-        console.log(err)
-        return
-    }
-    console.log(result) //for new.txt
- })
+//  if (err){
+//     console.log(err)
+//     return
+//  }
+//  console.log(result)  //for file.txt
+//  readFile('./Folder/subfolder/new.txt', 'utf8', (err, result) => {
+//     if(err){
+//         console.log(err)
+//         return
+//     }
+//     console.log(result) //for new.txt
+//  })
 
- // writefile
- writeFile('./Folder/subfolder/forth.txt', 'Conistency baby', (err, result) =>{
-   if(err){
-      console.log(err)
-      return
-   }
-   console.log(result)
- })
-})
+//  // writefile
+//  writeFile('./Folder/subfolder/forth.txt', 'Conistency baby', (err, result) =>{
+//    if(err){
+//       console.log(err)
+//       return
+//    }
+//    console.log(result)
+//  })
+// })
  
+
+// HTTP
+
+const http = require('http');
+
+const server = http.createServer((req,res)=>{
+   if(req.url ==='/'){
+      res.end('This is the home page ')
+   }
+   if(req.url ==='/about'){
+      res.end('This is what we do')
+   }
+   res.end(`
+   <h1>OOoops</h1>
+   <p> Are you lost </p>
+   <a href="/"> back home</a>
+   `)
+   
+})
+
+server.listen(5000)
