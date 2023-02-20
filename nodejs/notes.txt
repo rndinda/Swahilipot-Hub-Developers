@@ -5,3 +5,18 @@ HYPERTEXT TRANSFER PROTOCOL.
 HTTP is a stateless protocol, each request/response cycle between a client and server is independent of any previous or subsequent cycles. When a client sends a request to a server using HTTP, the server responds with a message that includes a status code, headers, and a body. The status code indicates whether the request was successful or not, the headers contain additional information about the response, and the body contains the requested data (such as an HTML page, an image, or a JSON object).
 
 The current version of HTTP is HTTP/2, which is an improvement over its predecessor, HTTP/1.1. HTTP/2 includes features such as multiplexing, header compression, and server push, which make web browsing faster and more efficient.
+
+
+
+Hypertext transfer protocol Agent
+
+- Software component that acts as a CLIENT or SERVER in http communication protocol.
+
+  -As Client:  Http agent SENDS http requests to server and receives Http response from server 
+                      :Web browser,command line  (cURL)
+
+ 
+  -As Server: Http agent LISTENS for incoming  HTTP requests from clients, processes those requests and sends back feedback to the client.
+         :Apache Nginx
+
+ -Used as intermediaries between clients and servers to provide additional functionality such as coaching,load balancing  security features (ssl encryption)    
