@@ -19,4 +19,11 @@ Hypertext transfer protocol Agent
   -As Server: Http agent LISTENS for incoming  HTTP requests from clients, processes those requests and sends back feedback to the client.
          :Apache Nginx
 
- -Used as intermediaries between clients and servers to provide additional functionality such as coaching,load balancing  security features (ssl encryption)    
+ -Used as intermediaries between clients and servers to provide additional functionality such as coaching,load balancing  security features (ssl encryption)  
+
+
+SOOCKET
+
+-Combination of an IP address and a port number that allows two computers to communicate with each other over a network.
+
+-When a client sends an http request
