@@ -1,6 +1,6 @@
 // OPERATING SYSTEM MODULE
 
-const os = require('os')
+//const os = require('os')
 
 //const user = os.userInfo()
 // console.log(user)
@@ -34,7 +34,7 @@ const os = require('os')
 
 // PATH MODULE
 
-const path = require('path')
+//const path = require('path')
 
 //console.log(path.sep)
 // const filePath = path.join('./Folder','subfolder','file.txt')
@@ -56,7 +56,7 @@ const path = require('path')
  
 // Synchronous approach
 
-const {readFileSync, writeFileSync} = require('fs')
+//const {readFileSync, writeFileSync} = require('fs')
 
 // const first = readFileSync("./Folder/first.txt", 'utf8')
 // const second = readFileSync('./Folder/subfolder/file.txt','utf-8')
@@ -74,7 +74,7 @@ const {readFileSync, writeFileSync} = require('fs')
 
 // Asynchronous approach
 
- const {readFile,writeFile} = require('fs')
+ //const {readFile,writeFile} = require('fs')
 
 //  readFile('./Folder/subfolder/file.txt', 'utf8', (err, result)=>{
 
@@ -104,21 +104,38 @@ const {readFileSync, writeFileSync} = require('fs')
 
 // HTTP
 
-const http = require('http');
+// const http = require('http');
 
-const server = http.createServer((req,res)=>{
-   if(req.url ==='/'){
-      res.end('This is the home page ')
-   }
-   if(req.url ==='/about'){
-      res.end('This is what we do')
-   }
-   res.end(`
-   <h1>OOoops</h1>
-   <p> Are you lost </p>
-   <a href="/"> back home</a>
-   `)
+// const server = http.createServer((req,res)=>{
+//    if(req.url ==='/'){
+//       res.end('This is the home page ')
+//    }
+//    if(req.url ==='/about'){
+//       res.end('This is what we do')
+//    }
+//    res.end(`
+//    <h1>OOoops</h1>
+//    <p> Are you lost </p>
+//    <a href="/"> back home</a>
+//    `)
    
+// })
+
+// server.listen(5000)
+
+const http = require('http')
+
+const server = http.createServer((req,res) => {
+  if (req.url === '/') {
+   res.end('Here is your first page')
+  }
+  else if (req.url === '/about') {
+   res.end('Here is your about page')
+  }
+  res.end(`
+  <h1>Wrong page buddy</h1>
+  <a href='/'>Back Home</a>
+  `)
 })
 
 server.listen(5000)

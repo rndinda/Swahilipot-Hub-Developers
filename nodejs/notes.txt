@@ -26,4 +26,14 @@ SOOCKET
 
 -Combination of an IP address and a port number that allows two computers to communicate with each other over a network.
 
--When a client sends an http request
+-When a client sends an http request to server, it establishes a socket connection with the server,the socket connection is used to transmit the request to the server and receive request from server.
+
+
+MODULES.
+ -inbuilt modules(os,path,filesysytem, http)
+ -User defined modules
+
+ Node Package Manager(NPM) - Command-line tools used to manage packages and dependencies for node.js applications.
+ - Allows developers to to easily install and manage third-party packages and libraries 
+
+NPM local Dependancies - Package or module installed locally in a projects directory rather than being installed globally onthe sysytem
