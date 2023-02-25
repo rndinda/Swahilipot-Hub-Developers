@@ -36,4 +36,19 @@ MODULES.
  Node Package Manager(NPM) - Command-line tools used to manage packages and dependencies for node.js applications.
  - Allows developers to to easily install and manage third-party packages and libraries 
 
-NPM local Dependancies - Package or module installed locally in a projects directory rather than being installed globally onthe sysytem
+
+Dependancy- Is a module or package that an application requires to function properly.(External code libraries you need to install or import into your node.js to use fpr functionality)
+-Dependancies are stored in the node_modules folder
+
+NPM local Dependancy - Package or module installed locally in a project directory for exclusive use  in the given project
+  npm i <packagename>
+
+   Global Dependancy - Use it inany project.
+     -npm install -g <packagename>  
+
+
+-Package.json -Stroes important info about a project/ package(Metadata file that lists various modules and libraries that the project depends on.)
+How to create package.json -: Manual approach
+                              npm init(step by step)
+                              npm init -y (everything default)
+                              
