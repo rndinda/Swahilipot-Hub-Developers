@@ -104,38 +104,49 @@
 
 // HTTP
 
+
 // const http = require('http');
 
-// const server = http.createServer((req,res)=>{
-//    if(req.url ==='/'){
-//       res.end('This is the home page ')
-//    }
-//    if(req.url ==='/about'){
-//       res.end('This is what we do')
-//    }
-//    res.end(`
-//    <h1>OOoops</h1>
-//    <p> Are you lost </p>
-//    <a href="/"> back home</a>
-//    `)
-   
+// const server = http.createServer((req,res) => {
+//   if (req.url === '/') {
+//    res.end('Here is your first page')
+//   }
+//   if (req.url === '/about') {
+//    res.end('The about page')
+//   }
+//   res.end(`
+//   <h1>Wrong page buddy</h1>
+//   <a href='/'>Back Home</a>
+//   `)
 // })
 
-// server.listen(5000)
+// server.listen(5000,() => {
+//   console.log('Server server')
 
-const http = require('http')
+// })
 
-const server = http.createServer((req,res) => {
-  if (req.url === '/') {
-   res.end('Here is your first page')
+
+const http = require('http');
+
+const servers =  http.createServer((req,res)=>{
+  if (req.url === '/'){
+    res.end('Home page')
   }
-  else if (req.url === '/about') {
-   res.end('Here is your about page')
+  if (req.url === '/about'){
+
+    // BLOCKING CODE
+    for (let i = 0; i < 1000; i++){
+      for (let j = 0; j < 1000; j++){
+        console.log(`${i} ${j}`)
+      }
+    }
+    res.end('About page')
   }
-  res.end(`
-  <h1>Wrong page buddy</h1>
-  <a href='/'>Back Home</a>
-  `)
+  res.end('Error page')
 })
 
-server.listen(5000)
+servers.listen(5000, () => {
+  console.log('Hey server')
+})
+
+

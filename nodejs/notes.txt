@@ -43,6 +43,21 @@ Dependancy- Is a module or package that an application requires to function prop
 NPM local Dependancy - Package or module installed locally in a project directory for exclusive use  in the given project
   npm i <packagename>
 
+   Dev dependency - A package required only during the development phase of a project but not during its runtime or production phase.(nodemon)
+
+  -Nodemon -Utility tool that monitors changes in the source code of a node.js application and automatically restart incase of any new changes.
+
+  Installing dev dependancy.
+  -npm i nodemon -D or
+  -npm i nodemon --save-dev
+
+  Running files :- npm run dev
+
+
+Uninstalling a package or modules.
+ -npm uninstall <package>
+
+
    Global Dependancy - Use it inany project.
      -npm install -g <packagename>  
 
@@ -51,4 +66,16 @@ NPM local Dependancy - Package or module installed locally in a project director
 How to create package.json -: Manual approach
                               npm init(step by step)
                               npm init -y (everything default)
-                              
+
+
+
+            
+EVENTS   
+
+Event driven Programming: Programming paradigm in which the flow of the program is determined by events that occur in the system rather than being controlled by a sequential set of instructions.
+(non-blocking input/output model).
+
+Event emmitter -  An object that emmits events when something happens.
+Event listener -  A function called when an event is emmited
+
+ 
