@@ -126,27 +126,40 @@
 // })
 
 
-const http = require('http');
+// const http = require('http');
 
-const servers =  http.createServer((req,res)=>{
-  if (req.url === '/'){
-    res.end('Home page')
-  }
-  if (req.url === '/about'){
+// const servers =  http.createServer((req,res)=>{
+//   if (req.url === '/'){
+//     res.end('Home page')
+//   }
+//   if (req.url === '/about'){
 
-    // BLOCKING CODE
-    for (let i = 0; i < 1000; i++){
-      for (let j = 0; j < 1000; j++){
-        console.log(`${i} ${j}`)
-      }
-    }
-    res.end('About page')
-  }
-  res.end('Error page')
+//     // BLOCKING CODE
+//     for (let i = 0; i < 1000; i++){
+//       for (let j = 0; j < 1000; j++){
+//         console.log(`${i} ${j}`)
+//       }
+//     }
+//     res.end('About page')
+//   }
+//   res.end('Error page')
+// })
+
+// servers.listen(5000, () => {
+//   console.log('Hey server')
+// })
+
+// Event - Emitter  http module
+
+const http = require('http')
+
+//using event emmitter api 
+const server = http.createServer()
+
+server.on('request',(req,res)=>{
+  res.end('Habari yako')
+
 })
-
-servers.listen(5000, () => {
-  console.log('Hey server')
-})
+server.listen(5000)
 
 

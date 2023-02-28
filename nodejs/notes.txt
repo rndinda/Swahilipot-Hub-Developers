@@ -19,7 +19,7 @@ Hypertext transfer protocol Agent
   -As Server: Http agent LISTENS for incoming  HTTP requests from clients, processes those requests and sends back feedback to the client.
          :Apache Nginx
 
- -Used as intermediaries between clients and servers to provide additional functionality such as coaching,load balancing  security features (ssl encryption)  
+ Proxy-servers -Used as intermediaries between clients and servers to provide additional functionality such as coaching,load balancing  security features (ssl encryption)  
 
 
 SOOCKET
@@ -70,12 +70,20 @@ How to create package.json -: Manual approach
 
 
             
-EVENTS   
+EVENTS 
+event_emmiter.js  
 
 Event driven Programming: Programming paradigm in which the flow of the program is determined by events that occur in the system rather than being controlled by a sequential set of instructions.
 (non-blocking input/output model).
+(Style in which the flow of the program is atleast determined by the events that occur as the program executes)
 
 Event emmitter -  An object that emmits events when something happens.
 Event listener -  A function called when an event is emmited
 
+The order in which the events are arranged is important.
+The callback functions can take arguments 
+
  
+ STREAMS
+ -Continuous flow of data from a source to destination.
+ -Allow reading and writing of data in chunks instead of doing it once .
