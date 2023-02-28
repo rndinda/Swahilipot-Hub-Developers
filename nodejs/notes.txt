@@ -84,6 +84,6 @@ The order in which the events are arranged is important.
 The callback functions can take arguments 
 
  
- STREAMS
+ STREAMS USed to read and write data sequentially 
  -Continuous flow of data from a source to destination.
  -Allow reading and writing of data in chunks instead of doing it once .

@@ -5,7 +5,7 @@
   "main": "1-intro.js",
   "scripts": {
     "start": "nodemon event_emitter.js ",
-    "dev": "nodemon inbuiltmodules.js"
+    "dev": "nodemon streams.js"
   },
   "keywords": [],
   "author": "",
