@@ -87,3 +87,23 @@ The callback functions can take arguments
  STREAMS USed to read and write data sequentially 
  -Continuous flow of data from a source to destination.
  -Allow reading and writing of data in chunks instead of doing it once .
+
+
+ REQUEST AND RESPONSE MESSAGES
+
+ Request message -an http request sent by a client to a server.
+  -A client(web browser) wants to communicate with a server over http, it sends and an http request message to the server.
+
+  what the http request message contains:
+   -HTTP method
+   -URL
+   -headers - set of key-value pairs that provide additional info about an HTTP REQUEST or RESPONSE, they are used to transmit meta-data about the message being sent.
+       -They contain info about the message such as: Content type, Content length, authentification info, catching info.
+       -setHeader('content type','index.html') - sets headers 
+
+Response message - A http response that is sent back to a client after receiving an http agent.
+
+what the http respnse contains:
+ -HTTP status code
+ -A response body
+ 

@@ -9,13 +9,13 @@
 // }
 
 // use stream to read the file data in chunk
-// const {createReadStream} = require('fs')
+const {createReadStream} = require('fs')
 
-// const stream = createReadStream('./Folder/subfolder/big.txt',{highWaterMark: 9000})
+const stream = createReadStream('./Folder/subfolder/big.txt','utf8')
 
-// stream.on('data', (results)=>{
-//     console.log(results)
-// })
+stream.on('data', (results)=>{
+    console.log(results)
+})
 // // highWaterMark-- controls the size of the buffer
 // // check for error in the terminal.
 
@@ -25,8 +25,8 @@
 
 // bigger txt file
 
-const {writeFileSync} = require('fs')
+// const {writeFileSync} = require('fs')
 
-for(i = 0; i < 1000000; i++){
-        writeFileSync('./Folder/subfolder/bigger.txt', `Habari yako Ndinda ${i}\n`, {flag: 'a'})
-}
+// for(i = 0; i < 1000000; i++){
+//         writeFileSync('./Folder/subfolder/bigger.txt', `Habari yako Ndinda ${i}\n`, {flag: 'a'})
+// }
