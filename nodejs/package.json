@@ -5,7 +5,7 @@
   "main": "1-intro.js",
   "scripts": {
     "start": "nodemon streams.js ",
-    "dev": "nodemon http_streams.js"
+    "dev": "nodemon async.js"
   },
   "keywords": [],
   "author": "",
