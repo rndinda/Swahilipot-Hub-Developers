@@ -4,8 +4,8 @@
   "description": "",
   "main": "1-intro.js",
   "scripts": {
-    "start": "nodemon streams.js ",
-    "dev": "nodemon async.js"
+    "start": "event_emitter.js ",
+    "dev": "event_emitter.js"
   },
   "keywords": [],
   "author": "",

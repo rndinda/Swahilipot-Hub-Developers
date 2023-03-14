@@ -11,4 +11,5 @@ customEmitter.on('response', (name)=>{
 customEmitter.on('response', ()=>{
     console.log('Oyaa rada')
 })
-customEmitter.emit('response','Nodejs')
+customEmitter.emit('response','Ndinda')
+// node file name
