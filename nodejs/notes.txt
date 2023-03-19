@@ -83,6 +83,8 @@ Event listener -  A function called when an event is emmited
 The order in which the events are arranged is important.
 The callback functions can take arguments 
 
+QUESTION: How can i listen for the same event and have different arguments(event_emitters.js line 23,35,41)
+
  
  STREAMS USed to read and write data sequentially 
  -Continuous flow of data from a source to destination.
