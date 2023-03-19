@@ -39,3 +39,4 @@ yEmit.on('response',()=>{
     console.log(`what is the difference in using the different  quotation marks` )
 })
 yEmit.emit('response','Mwesh',39,'Rita',345)
+// how to have more emit arguments 
