@@ -19,20 +19,20 @@
 const EventEmitter = require('events');
 
 const yEmit = new EventEmitter()
-yEmit.on('response',(name,age) => {
-    console.log(`Good morning folks, my name is ${name} am ${age} years old`)
+yEmit.on('response',(arg1,arg2) => {
+    console.log(`Good morning folks, my name is ${arg1} am ${arg2} years old`)
 })
 
 yEmit.on('response', () => {
-    console.log('Hey baby')
+    console.log('Hey missy')
 })
 
 yEmit.on('response',()=>{
     console.log(`Headed to work today`)
 })
 
-yEmit.on('response',(profile,logno)=>{
-    console.log(`Give user:${profile} logNo:${logno} in the logins please`)
+yEmit.on('response',(arg3,arg4)=>{
+    console.log(`Give user:${arg3} logNo:${arg4} in the logins please`)
 })
 
 yEmit.on('response',()=>{

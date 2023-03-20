@@ -4,7 +4,7 @@
   "description": "",
   "main": "1-intro.js",
   "scripts": {
-    "start": "event_emitter.js ",
+    "start": "nodemon emmitt.js ",
     "dev": "nodemon event_emitter.js"
   },
   "keywords": [],
