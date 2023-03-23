@@ -54,7 +54,7 @@
 
 // The FILE SYSTEM
  
-// Synchronous approach
+// Synchronous approach/ blocking
 
 //const {readFileSync, writeFileSync} = require('fs')
 
@@ -72,7 +72,7 @@
 // console.log(third)
 
 
-// Asynchronous approach
+// Asynchronous approach / non-blocking
 
  //const {readFile,writeFile} = require('fs')
 

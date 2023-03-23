@@ -31,8 +31,8 @@ yEmit.on('response',()=>{
     console.log(`Headed to work today`)
 })
 
-yEmit.on('response',(arg3,arg4)=>{
-    console.log(`Give user:${arg3} logNo:${arg4} in the logins please`)
+yEmit.on('response',function(arg1,arg2,arg3,arg4) {
+    console.log(`Give User: ${arg3} LogNo: ${arg4} in the logins please`)
 })
 
 yEmit.on('response',()=>{
@@ -40,3 +40,4 @@ yEmit.on('response',()=>{
 })
 yEmit.emit('response','Mwesh',39,'Rita',345)
 // how to have more emit arguments 
+//   - created the function and passed more arguments
